@@ -4,8 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket</title>
-</head>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/457477dc73.js" crossorigin="anonymous"></script>
+    <!-- Daisy UI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script></head>
 <body>
-    
+    <header class="lg:mx-auto px-32">
+    <!-- Navbar Style -->
+    <nav >
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Destination</a></li>
+                  <li><a href="#">Search</a></li>
+
+              </div>
+              <h2 class="text-2xl font-bold">P-Ticket</h2>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal text-xl px-1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+            </div>
+            <div class="navbar-end">
+            <a class="border-[#1DD10066] bg-[#F7FEE7] text-[#1DD100] btn text-xl">
+                <div class="flex items-center justify-center gap-4">
+                    <div>
+                        Bus
+                    </div>
+                    <div>
+                        <strong><i class="fa-solid fa-van-shuttle"></i></strong>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner section style -->
+    <div class=" hero rounded-2xl" style="background-image: url(./images/banner.png);">
+        <div class="lg:py-28 hero-content text-center text-neutral-content">
+          <div class="">
+            <h1 class=" mb-5 lg:text-[64px] text-[24px] font-bold">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h1>
+            <p class="mb-8 lg:text-xl text-base">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+            <button class="mb-44 btn bg-[#1DD100] outline-none border-none lg:text-xl text-base font-bold">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main >
+        <!-- Best offers for you -->
+        <section class="lg:mx-auto px-32">
+            <div class="lg:mt-28 mt-10 mb-12 text-center lg:text-5xl text-2xl font-bold">
+                <h1>Best offers for you</h1>
+            </div>
+
+            <div class="lg:flex lg:items-center lg:gap-6">
+                <!-- 1st cupon card -->
+                <div class="bg-[#FFBF0F] flex justify-between items-center lg:w-[50%] rounded-lg mb-16 px-14 text-center">
+                    <div>
+                        <h3 class="text-[#030712CC] lg:text-4xl text-xl font-black">15% OFF</h3>
+                        <p class="text-[#030712CC] lg:text-xl text-[14px]  font-semibold">on your next purchase</p>
+                        <p class="text-[#03071280] text-base font-medium">use by January 2024</p>
+                    </div>
+                    <div class="">
+                        <img src="./images/cupon-devider.png" class="" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-[#030712CC] text-3xl font-bold">NEW15</h3>
+                        <p class="text-[#03071266] text-xl font-medium">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- 2n cupon card -->
+                <div class="bg-[#F78C9C] flex justify-between items-center lg:w-[50%] rounded-lg mb-16 px-14 text-center">
+                    <div>
+                        <h3 class="text-[#030712CC] lg:text-4xl text-xl font-black">20% OFF</h3>
+                        <p class="text-[#030712CC] lg:text-xl text-[14px]  font-semibold">on your next purchase</p>
+                        <p class="text-[#03071280] text-base font-medium">use by January 2024</p>
+                    </div>
+                    <div class="">
+                        <img src="./images/cupon-devider.png" class="" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-[#030712CC] text-3xl font-bold">Couple 20
+                        </h3>
+                        <p class="text-[#03071266] text-xl font-medium">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-16 flex items-center justify-center">
+                <button class="btn border-[#1DD100] text-[#1DD100] sm:btn-sm md:btn-md lg:btn-lg">See All Offers</button>
+            </div>
+        </section>
+        <!-- P.H Paribahan -->
+        <section class="bg-[#F7F8F8] rounded-xl py-28">
+            <!-- p.h paribahan title and paragraph -->
+            <div class="lg:mx-auto px-32">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold mb-5">P.H Paribahan</h1>
+                    <p class="text-base mb-5 w-[50%] flex m-auto">If you are looking for a shortcut for P.H. Paribahan, it is commonly abbreviated as "PHB" in many contexts. Please note that this abbreviation might vary, and it's always a good idea to check official sources or contact the company directly for the most accurate and up-to-date information.</p>
+                </div>
+                <!-- ph paribahan form -->
+                <div>
+                    <div class="bg-[#FFFFFF] rounded-xl">
+                        <div class="bg-[#FFFFFF] rounded-xl p-8">
+                            <div class="mb-5 flex items-center justify-between ">
+                                <div class="flex items-center gap-3">
+                                    <div>
+                                        <img src="./images/bus-logo.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-3xl font-bold">Greenline Paribahan</h3>
+                                        <p class="text-xl font-normal">Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                </div>
+                                <div class="p-5 rounded-xl flex items-center gap-1 bg-[#1DD10026]">
+                                    <div>
+                                        <img src="./images/seat-green.png" alt="" class="border-[#F7F8F8] border-dashed border-2">
+                                    </div>
+                                    <div>
+                                        <p class="text-xl font-medium text-[#1DD100]">40 Seats left</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-8 bg-[#F7F8F8] rounded-xl">
+                                <div class="mb-2 flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-xl text-[#03071299] font-semibold">Route</h3>
+                                    </div>
+                                    <div class="text-xl font-semibold">
+                                        Dhaka-Sylhet
+                                    </div>
+                                </div>
+                                <hr class="mb-5 border-t-2 border-dashed border-[#03071233]">
+                                <div class="mb-2 flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-[#03071299]">Departure Time</h3>
+                                    </div>
+                                    <div class="text-xl font-semibold">
+                                        9:00 PM
+                                    </div>
+                                </div>
+                                <hr class="mb-5 border-t-2 border-dashed border-[#03071233]">
+                                <div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
