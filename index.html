@@ -56,7 +56,7 @@
           <div class="">
             <h1 class=" mb-5 lg:text-[64px] text-[24px] font-bold">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h1>
             <p class="mb-8 lg:text-xl text-base">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-            <button class="mb-44 btn bg-[#1DD100] outline-none border-none lg:text-xl text-base font-bold">Buy Tickets</button>
+            <a href="#ticket-form"><button class="mb-44 btn bg-[#1DD100] outline-none border-none lg:text-xl text-base font-bold">Buy Tickets</button></a>
           </div>
         </div>
       </div>
@@ -114,9 +114,9 @@
                     <p class="text-base mb-5 w-[50%] flex m-auto">If you are looking for a shortcut for P.H. Paribahan, it is commonly abbreviated as "PHB" in many contexts. Please note that this abbreviation might vary, and it's always a good idea to check official sources or contact the company directly for the most accurate and up-to-date information.</p>
                 </div>
                 <!-- ph paribahan form -->
-                <div>
-                    <div class="bg-[#FFFFFF] rounded-xl">
-                        <div class="bg-[#FFFFFF] rounded-xl p-8">
+                <div id="ticket-form">
+                    <div class="bg-[#FFFFFF] rounded-xl flex justify-between justify-center items-center ">
+                        <div class="bg-[#FFFFFF] rounded-xl p-8 w-[70%]">
                             <div class="mb-5 flex items-center justify-between ">
                                 <div class="flex items-center gap-3">
                                     <div>
@@ -155,14 +155,130 @@
                                     </div>
                                 </div>
                                 <hr class="mb-5 border-t-2 border-dashed border-[#03071233]">
-                                <div>    
+                                <div class="text-base flex justify-between text-[#030712CC]">  
+                                    <button class="btn bg-[#0307120D] border-none">Boarding Point - Laxmipur</button>
+                                    <button class="btn bg-[#0307120D] border-none">Dropping Point - Bogura</button>
+                                    <button class="btn bg-[#0307120D] border-none">Est. Time - 11 Hour</button>  
                                 </div>
                             </div>
+
                         </div>
+                        <div class=" ">
+                            <img src="./images/info-devider.png" alt="">
+                        </div>
+                        <div class="text-center  m-auto pr-2" >
+                            <img src="./images/fare.png" alt="" class="m-auto mb-4">
+                            <h3 class="text-4xl font-bold mb-">550 Taka</h3>
+                            <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
+                        </div> 
                     </div>
                 </div>
+                <!-- Select Your Seat Section Start -->
+                <div class="mt-5 ">
+                    <div class="p-5 bg-[#FFFFFF] rounded-xl flex justify-between  gap-5 ">
+                       <div class="w-[60%] border-r-2 border-dashed">
+                            <div class="pr-8">
+                                <div>
+                                    <h3 class="mb-2 text-2xl font-semibold">Select Your Seat</h3>
+                                <hr class="mb-4 border-2 border-dashed border-[#03071233]">
+                                </div>
+                                <div class="flex justify-between ">
+                                    <div class="flex items-center gap-2">
+                                        <img src="./images/seat-gray.png" alt="" class="border-2 border-dashed">
+                                        <p class="text-[#03071280] text-xl font-medium">Available</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <img src="./images/seat-green.png" alt="" class="border-2 border-dashed">
+                                        <p class="text-[#1DD100] text-xl font-medium">Selected</p>
+                                    </div>
+                                </div>
+                                <hr class="mt-4 mb-4 border-2 border-dashed">
+
+                                <!-- seat selected start -->
+
+                                <div class="flex justify-end mb-4">
+                                    <button class="btn"><img src="./images/wheel.png" alt=""></button>
+                                </div>
+
+                                <!-- seat design start -->
+                                <div>
+                                    <div>
+                                        <!-- a seat column -->
+                                        <div class=" flex justify-between mb-4">
+                                            <div class=" flex gap-5">
+                                                <div>
+                                                    <span class="mr-2">A</span>
+                                                    <kbd class="kbd py-1 px-10">A1</kbd>
+                                                </div>
+                                                <div>
+                                                    <kbd class="kbd py-1 px-10">A2</kbd>
+                                                </div>
+                                            </div>
+
+                                            <div class=" flex gap-5">
+                                                <div>
+                                                    <button class="kbd py-1 px-10">A3</button>
+                                                </div>
+                                                <div>
+                                                    <button class="kbd py-1 px-10">A4</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- b seat column -->
+                                        <div class=" flex justify-between">
+                                            <div class=" flex gap-5">
+                                                <div>
+                                                    <span class="mr-2">B</span>
+                                                    <kbd class="kbd py-1 px-10">B1</kbd>
+                                                </div>
+                                                <div>
+                                                    <kbd class="kbd py-1 px-10">B2</kbd>
+                                                </div>
+                                            </div>
+
+                                            <div class=" flex gap-5">
+                                                <div>
+                                                    <button class="kbd py-1 px-10">B3</button>
+                                                </div>
+                                                <div>
+                                                    <button class="kbd py-1 px-10">B4</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- seat design second part -->
+                                    <div>
+                                        <div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            
+                       </div>
+                       <div class="w-[40%]">
+                        <h3 class="mb-2 text-2xl font-semibold">Select Your Seat</h3>
+                        <hr class="border-2 border-dashed border-[#03071233]">
+
+                        <div class="bg-[#F7F8F8]">
+                            <table style="width:100%">
+                                <tr><th>Seat <span>2</span></th>
+                                    <th>Class</th>
+                                    <th>Price</th>
+                                  </tr>
+                            </table>
+                        </div>
+                   </div>
+                    </div>
+                </div>
+                <!-- Select your seat section two -->
             </div>
         </section>
+
+        
+        
     </main>
 </body>
 </html>
