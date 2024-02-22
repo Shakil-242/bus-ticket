@@ -176,7 +176,7 @@
                         </div>
                         <div class="text-center  m-auto pr-2" >
                             <img src="./images/fare.png" alt="" class="m-auto mb-4">
-                            <h3 class="text-4xl font-bold mb-">550 Taka</h3>
+                            <h3 id="budget" class="text-4xl font-bold mb-"> 550 <span>Taka</span></h3>
                             <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
                         </div> 
                     </div>
@@ -213,43 +213,45 @@
                                     <div>
                                         <!-- a seat column -->
                                         <div class=" flex justify-between mb-4">
-                                            <div class=" flex gap-5">
+                                            <div class=" flex gap-5 items-center">
+                                                <span class="mr-2">A</span>
                                                 <div>
-                                                    <span class="mr-2">A</span>
-                                                    <button class=" btn py-1 px-10">A1</button>
+                                                    
+                                                    <button class="add-button btn py-1 px-10">A1</button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn py-1 px-10">A2</button >
+                                                    <button class="add-button btn py-1 px-10">A2</button >
                                                 </div>
                                             </div>
 
                                             <div class=" flex gap-5">
                                                 <div>
-                                                    <button class="btn py-1 px-10">A3</button>
+                                                    <button class="add-button btn py-1 px-10">A3</button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn py-1 px-10">A4</button>
+                                                    <button class="add-button btn py-1 px-10">A4</button>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- b seat column -->
                                         <div class=" flex justify-between">
-                                            <div class=" flex gap-5">
+                                            <div class=" flex gap-5 items-center">
+                                                <span class="mr-2">B</span>
                                                 <div>
-                                                    <span class="mr-2">B</span>
-                                                    <button class=" btn py-1 px-10">B1</button>
+                                                    
+                                                    <button class="add-button btn py-1 px-10">B1</button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn py-1 px-10">B2</button>
+                                                    <button class="add-button btn py-1 px-10">B2</button>
                                                 </div>
                                             </div>
 
                                             <div class=" flex gap-5">
                                                 <div>
-                                                    <button class="btn py-1 px-10">B3</button>
+                                                    <button class="add-button btn py-1 px-10">B3</button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn py-1 px-10">B4</button>
+                                                    <button class="add-button btn py-1 px-10">B4</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -278,7 +280,7 @@
                                  <div>Price</div>
                             </div>
                             <!-- empty div -->
-                            <div class="selectedPrice"></div>
+                            <div id="selected-container"></div>
 
                             <hr class="mt-2 border-1 border-dashed border-[#03071233]">
                             <div class="mb-4">
@@ -323,7 +325,7 @@
                    </div>
                     </div>
                 </div>
-                <!-- Select your seat section two -->
+                <!-- Select your seat section add -->
             </div>
         </section>  
     </main>
