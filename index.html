@@ -140,7 +140,7 @@
                                         <img src="./images/seat-green.png" alt="" class="border-[#F7F8F8] border-dashed border-1">
                                     </div>
                                     <div>
-                                        <p class="text-xl font-medium text-[#1DD100]">40 Seats left</p>
+                                        <p class="text-xl font-medium text-[#1DD100]"><span id="seat-count">8</span> Seats left</p>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +275,7 @@
                         <div class="mt-5 bg-[#F7F8F8] p-5 rounded-xl">
                             <div class="flex justify-between text-base text-[#030712] font-medium">
                                 
-                                 <div>Seat <span class="text-[15px] font-bold">2</span></div>
+                                 <div>Seat <span id="seat-cart" class="text-[15px] font-bold">0</span></div>
                                  <div>Class</div>
                                  <div>Price</div>
                             </div>
@@ -288,17 +288,17 @@
                             </div>
                             <div class="flex justify-between text-base text-[#030712] font-medium">
                                 <div><h2>Total</h2></div>
-                                <div><h2>BDT <span>0</span></h2></div>
+                                <div><h2>BDT <span id="total-cost">0</span></h2></div>
                             </div>
                             
                                 <div class="flex justify-between mt-5 bg-white p-2 rounded-xl" >
-                                    <input type="text" class="grow outline-none pl-1" placeholder="Have any coupon?" />
-                                <button class="bg-[#1DD100] text-white px-4 py-2 rounded-xl">Apply Now</button>
+                                    <input type="text" id="cupon-code" class="grow outline-none pl-1" placeholder="Have any coupon?" />
+                                <button onclick="grandTotal('apply-btn')" class="bg-[#1DD100] text-white px-4 py-2 rounded-xl">Apply Now</button>
                                 </div>
                            <div class="mt-4">
                                 <div class="flex justify-between text-base text-[#030712] font-medium">
                                     <h2>Grand Total</h2>
-                                    <h2>BDT <span>0</span></h2>
+                                    <h2>BDT <span id="grand-total">0</span></h2>
                                 </div>
                            </div>
                         </div>
@@ -315,7 +315,7 @@
                                 <p class="text-base text-[#030712] font-semibold mb-2">Email ID</p>
                                 <input type="text" class="mb-2 border-2 solid outline-none  w-full rounded-xl p-2" placeholder="Enter your email id" />
                             </div>
-                            <button class="bg-[#1DD100] rounded-lg text-center w-full py-2 px-4 text-white text-xl text-[#030712] font-semibold">Next</button>
+                            <button class="btn w-full bg-[green] text-white text-xl font-medium" onclick="my_modal_1.showModal()">Next</button>
 
                             <div class="flex justify-center  gap-5 mt-5  " >
                                 <div><a href="" class="text-[#03071299] text-base border-b-2 border-solid border-[#03071299]">Terms and Conditions</a></div>
@@ -328,6 +328,20 @@
                 <!-- Select your seat section add -->
             </div>
         </section>  
+        <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
     </main>
 
     
