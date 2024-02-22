@@ -99,7 +99,7 @@ function grandTotal(status){
                 document.getElementById("grand-total").innerText=totalCost-discounted;
         }
             else(
-                alert("wrong")
+                alert("Please enter the valid coupone code")
             )
     }  
 }
