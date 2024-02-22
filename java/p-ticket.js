@@ -37,7 +37,7 @@ for (const btn of allBtn){
    
     const seatCount = getConvertedValue ("seat-cart")
     if(seatCount+1>4){
-        alert ("limit ses r hobe na")
+        alert ("Limit Finished")
         return;
 }
 event.target.parentNode.style.backgroundColor="green";
