@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script></head>
 <body>
+
+
     <header class="lg:mx-auto px-32">
     <!-- Navbar Style -->
     <nav >
@@ -43,7 +45,7 @@
                         Bus
                     </div>
                     <div>
-                        <strong><i class="fa-solid fa-van-shuttle"></i></strong>
+                        <span><i class="fa-solid fa-van-shuttle"></i></span>
                     </div>
                 </div>
             </a>
@@ -56,11 +58,15 @@
           <div class="">
             <h1 class=" mb-5 lg:text-[64px] text-[24px] font-bold">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h1>
             <p class="mb-8 lg:text-xl text-base">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-            <a href="#ticket-form"><button class="mb-44 btn bg-[#1DD100] outline-none border-none lg:text-xl text-base font-bold">Buy Tickets</button></a>
+           <button onclick="scrollToTop()" class="mb-44 btn bg-[#1DD100] outline-none border-none lg:text-xl text-base font-bold">Buy Tickets</button>
           </div>
         </div>
       </div>
     </header>
+
+
+
+
     <main >
         <!-- Best offers for you -->
         <section class="lg:mx-auto px-32">
@@ -105,8 +111,10 @@
                 <button class="btn border-[#1DD100] text-[#1DD100] sm:btn-sm md:btn-md lg:btn-lg">See All Offers</button>
             </div>
         </section>
+
+
         <!-- P.H Paribahan -->
-        <section class="bg-[#F7F8F8] rounded-xl py-28">
+        <section class="bg-[#F7F8F8] rounded-2xl border-green-500 border-t-2 py-28">
             <!-- p.h paribahan title and paragraph -->
             <div class="lg:mx-auto px-32">
                 <div class="text-center">
@@ -114,7 +122,7 @@
                     <p class="text-base mb-5 w-[50%] flex m-auto">If you are looking for a shortcut for P.H. Paribahan, it is commonly abbreviated as "PHB" in many contexts. Please note that this abbreviation might vary, and it's always a good idea to check official sources or contact the company directly for the most accurate and up-to-date information.</p>
                 </div>
                 <!-- ph paribahan form -->
-                <div id="ticket-form">
+                <div>
                     <div class="bg-[#FFFFFF] rounded-xl flex justify-between justify-center items-center ">
                         <div class="bg-[#FFFFFF] rounded-xl p-8 w-[70%]">
                             <div class="mb-5 flex items-center justify-between ">
@@ -129,7 +137,7 @@
                                 </div>
                                 <div class="p-5 rounded-xl flex items-center gap-1 bg-[#1DD10026]">
                                     <div>
-                                        <img src="./images/seat-green.png" alt="" class="border-[#F7F8F8] border-dashed border-2">
+                                        <img src="./images/seat-green.png" alt="" class="border-[#F7F8F8] border-dashed border-1">
                                     </div>
                                     <div>
                                         <p class="text-xl font-medium text-[#1DD100]">40 Seats left</p>
@@ -178,21 +186,21 @@
                     <div class="p-5 bg-[#FFFFFF] rounded-xl flex justify-between  gap-5 ">
                        <div class="w-[60%] border-r-2 border-dashed">
                             <div class="pr-8">
-                                <div>
+                                <div id="ticket-form">
                                     <h3 class="mb-2 text-2xl font-semibold">Select Your Seat</h3>
-                                <hr class="mb-4 border-2 border-dashed border-[#03071233]">
+                                <hr class="mb-4 border-1 border-dashed border-[#03071233]">
                                 </div>
                                 <div class="flex justify-between ">
                                     <div class="flex items-center gap-2">
-                                        <img src="./images/seat-gray.png" alt="" class="border-2 border-dashed">
+                                        <img src="./images/seat-gray.png" alt="" class="border-1 border-dashed">
                                         <p class="text-[#03071280] text-xl font-medium">Available</p>
                                     </div>
                                     <div class="flex items-center gap-2">
-                                        <img src="./images/seat-green.png" alt="" class="border-2 border-dashed">
+                                        <img src="./images/seat-green.png" alt="" class="border-1 border-dashed">
                                         <p class="text-[#1DD100] text-xl font-medium">Selected</p>
                                     </div>
                                 </div>
-                                <hr class="mt-4 mb-4 border-2 border-dashed">
+                                <hr class="mt-4 mb-4 border-1 border-dashed">
 
                                 <!-- seat selected start -->
 
@@ -260,25 +268,112 @@
                        </div>
                        <div class="w-[40%]">
                         <h3 class="mb-2 text-2xl font-semibold">Select Your Seat</h3>
-                        <hr class="border-2 border-dashed border-[#03071233]">
+                        <hr class="border-1 border-dashed border-[#03071233]">
 
-                        <div class="bg-[#F7F8F8]">
-                            <table style="width:100%">
-                                <tr><th>Seat <span>2</span></th>
-                                    <th>Class</th>
-                                    <th>Price</th>
-                                  </tr>
-                            </table>
+                        <div class="mt-5 bg-[#F7F8F8] p-5 rounded-xl">
+                            <div class="flex justify-between text-base text-[#030712] font-medium">
+                                
+                                 <div>Seat <span class="text-[15px] font-bold">2</span></div>
+                                 <div>Class</div>
+                                 <div>Price</div>
+                            </div>
+                            <!-- empty div -->
+                            <div class="selectedPrice"></div>
+
+                            <hr class="mt-2 border-1 border-dashed border-[#03071233]">
+                            <div class="mb-4">
+                                <hr class="mt-2 border-1 border-solid border-[#03071233]">
+                            </div>
+                            <div class="flex justify-between text-base text-[#030712] font-medium">
+                                <div><h2>Total</h2></div>
+                                <div><h2>BDT <span>0</span></h2></div>
+                            </div>
+                            
+                                <div class="flex justify-between mt-5 bg-white p-2 rounded-xl" >
+                                    <input type="text" class="grow outline-none pl-1" placeholder="Have any coupon?" />
+                                <button class="bg-[#1DD100] text-white px-4 py-2 rounded-xl">Apply Now</button>
+                                </div>
+                           <div class="mt-4">
+                                <div class="flex justify-between text-base text-[#030712] font-medium">
+                                    <h2>Grand Total</h2>
+                                    <h2>BDT <span>0</span></h2>
+                                </div>
+                           </div>
+                        </div>
+                        <div class=" mt-4">
+                            <div>
+                                <p class="text-base text-[#030712] font-semibold mb-2">Passenger Name*</p>
+                                <input type="text" class="mb-2 border-2 solid outline-none  w-full rounded-xl p-2" placeholder="Enter your name" />
+                            </div>
+                            <div>
+                                <p class="text-base text-[#030712] font-semibold mb-2">Phone Number*</p>
+                                <input type="text" class="mb-2 border-2 solid outline-none  w-full rounded-xl p-2" placeholder="Enter your phone number" />
+                            </div>
+                            <div>
+                                <p class="text-base text-[#030712] font-semibold mb-2">Email ID</p>
+                                <input type="text" class="mb-2 border-2 solid outline-none  w-full rounded-xl p-2" placeholder="Enter your email id" />
+                            </div>
+                            <button class="bg-[#1DD100] rounded-lg text-center w-full py-2 px-4 text-white text-xl text-[#030712] font-semibold">Next</button>
+
+                            <div class="flex justify-center  gap-5 mt-5  " >
+                                <div><a href="" class="text-[#03071299] text-base border-b-2 border-solid border-[#03071299]">Terms and Conditions</a></div>
+                                <div><a href="" class="text-[#03071299] text-base border-b-2 border-solid border-[#03071299] ">Cancellation Policy</a></div>
+                            </div>
                         </div>
                    </div>
                     </div>
                 </div>
                 <!-- Select your seat section two -->
             </div>
-        </section>
-
-        
-        
+        </section>  
     </main>
+
+    
+    
+    <footer class="bg-[#030712]">
+        <section class="lg:mx-auto px-32 py-32 ">
+            <!-- P Ticket Section -->
+            <div class="flex justify-between">
+                <div>
+                    <h2 class="text-white font-extrabold text-4xl mb-4">P-Ticket</h2>
+                    <p class="text-[#FFFFFFCC] text-xl w-[70%]">P-Ticket is a digital platform to make your daily commuting better.</p>
+                </div>
+                
+                <!-- Download App -->
+                <div>
+                    <h3 class="text-xl text-[#FFFFFF] font-semibold">Download our app</h3>
+                <div class="mt-2 border-2 border-[#FFFFFF] rounded-lg px-4 py-2">
+                    <button>
+                        <div class="flex items-center gap-2">
+                            <img src="./images/playstore.png" alt="">
+                            <div>
+                                <p class="text-white text-base font-medium">GET IT ON</p>
+                            <h2 class="text-white text-base font-semibold">Google Play</h2>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                    
+                </div>
+            </div>
+
+            <!-- horzontal Section -->
+            <hr class="border-dashed border mt-12 ">
+
+            <!-- Terms Condition Section -->
+            <div class="mt-8 flex justify-between">
+                <div>
+                    <h3 class="text-base text-[#FFFFFFB3]">@all rights reserved, P-Ticket services limited.2024</h3>
+                </div>
+                <div class="flex gap-8">
+                    <h3 class="text-base text-[#FFFFFFB3]">Terms & condition</h3>
+                    <h3 class="text-base text-[#FFFFFFB3]">Return & refund policy</h3>
+                    
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./java/p-ticket.js"></script>
 </body>
 </html>
